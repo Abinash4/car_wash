@@ -1,0 +1,238 @@
+:root{
+    --baseColor:#68D687;
+    --fontfamily :Arial, Helvetica, sans-serif;
+
+}
+*{
+    font-family: var(--fontfamily);
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+
+}
+.container{
+     /* background-color: aquamarine;  */
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height:100vh;
+
+    
+}
+.container img{
+    position: absolute;
+    width: 530px;
+    height: 550px;
+    margin-left: 52%;
+    top: 7%;
+}
+
+.container .highlighted_text{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 7%;
+}
+.container .highlighted_text h1{
+    /* margin-top: 120px; */
+    font-weight: bold;
+    max-width: 50vw;
+    font-size: 60px;
+    color: #333;
+    /* border-right: none; */
+     white-space: nowrap; /* Prevent line breaks */
+        overflow: hidden; /* Hide overflowing text */
+        border-right: 2px solid transparent; /* Create the typing cursor effect */
+        
+}
+.container .header {
+    /* background: linear-gradient(to left,  rgb(0, 0, 0), rgba(80, 79, 79, 0)); */
+    /* background-image: linear-gradient(to right, rgb(29, 25, 25),rgb(36, 36, 35),rgb(39, 39, 37),rgb(26, 25, 31),rgb(18, 18, 31),rgb(15, 8, 20),rgb(3, 3, 3)); */
+    margin-top: 81vh;
+    /* left: 82%; */
+    position: fixed;
+    opacity: 1;
+    min-height: 30px;
+    height: 8%;
+    padding:10px 0;
+    max-width: 100%;
+    width: 100vw;
+    z-index: 2;
+    /* left: 0; */
+    margin-top: 0px;
+    opacity: 0.99999;
+    border-bottom: 0.5px solid #dad9d9;
+    box-shadow: 0px 0px 3px 0px #d1d1d1;
+    display: flex;
+}
+.header ul{
+    margin-left: 700px;
+    display: flex;
+    width: 600px;
+    margin-top: 15px;
+    background-color: rgba(0,0,0,0.0);
+    list-style-type: none;
+}
+.header li{
+    background-color: rgba(0,0,0,0.0);
+    padding: 0% 20px;
+
+}
+.header a{
+    text-align: right;
+    
+    background-color: rgba(0,0,0,0.0);
+    margin-left: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(7, 43, 75);
+    font-family: var(--fontfamily);
+
+}
+.header .logo{
+    margin-top: -2.6%;
+    margin-left: 25px;
+    width: 190px;
+    height: 130px;
+}
+
+
+/* book buttn */
+.container .btn , .bookingContainer .btn {
+    /* position: absolute; */
+    font-size: 1.2rem;
+    margin-top: -1%;
+    margin-left : 3%;
+    /* max-width: 15vw; */
+    text-align: left;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    text-transform: camelcase;
+    background-color: rgb(36, 36, 46);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 5px #06054b;
+    /* -webkit-box-reflect: below 2px linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)); */
+    animation: dance 0.5s ease-in-out infinite;
+  }
+  
+  .container .btn:active {
+    scale: 0.92;
+  }
+  
+  .container .btn:hover {
+    background: rgb(2,29,78);
+    background:  #82ca97 60%;
+    filter: blur(0.50px);
+    color: rgb(4, 4, 38);
+  }
+  .btnWrap{
+    display: flex;
+    margin-left: 4%;
+    /* flex-direction: column;
+    tex */
+  }
+
+
+
+
+  /* Service page */
+
+  .servicePageContainer{
+    background-color: #effaf8; 
+   z-index: 2;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   height:auto;
+   padding-top: 3%;
+   word-spacing: 5px;
+}
+
+.servicePageContainer h2{
+    text-align: center;
+}
+.servicePageContainer h3{
+    text-align: center;
+    font-family: var(--fontfamily);
+    font-weight: lighter;
+    color: #666666;
+}
+
+.exterior{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    /* border: #06054b solid ; */
+    margin: 5% auto;
+    top: 10%;
+    width: 80vw;
+    height: 300px;
+}
+.exterior .productDesc{
+    /* display: flex; */
+    /* border: #06054b solid ; */
+    margin: auto;
+    
+    top: 10%;
+    width: 35vw;
+    height: 250px;
+}
+.exterior .productDesc #descTitle{
+    text-align: left;
+}
+.exterior .productImages{
+    height: 300px;
+    width: 500px;
+
+}
+
+
+  /* form page */
+
+  .bookingContainer{
+   /* background-color: #7a7a7a; */
+   /* background: url(./Assets/carWaxing.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center; */
+
+   background-image: url('./Assets/carWaxing.jpg');
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   /* background-attachment: fixed; */
+   overflow: hidden;
+   width:100%;
+   z-index: 2;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   height:100vh;
+   overflow-y: hidden;
+   padding-top: 3%;
+   word-spacing: 5px;
+}
+
+.form{
+width: 80%;
+text-align: center;
+border: #333 solid 1px;
+
+}
+.form input[type='text'] {
+background-color: #06054b;
+width: 30%;
+height: 30px;
+margin: 10px 50px;
+
+}
